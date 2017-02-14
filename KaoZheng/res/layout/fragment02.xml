@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Rela"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    
+    <ImageView
+        android:id="@+id/wode1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/wode1"
+         />
+
+   <EditText
+        android:id="@+id/author_password"
+        android:layout_width="175dp"
+        android:layout_height="30dp"
+        android:textSize="30px"
+        android:hint="请输入密码"
+        android:maxLength="15"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="175dp"
+        android:layout_marginRight="66dp"
+        
+         />
+    
+   <EditText
+        android:id="@+id/author_username"
+        android:layout_width="175dp"
+        android:layout_height="30dp"
+        android:textSize="30px"
+        android:hint="请输入手机号码"
+         android:maxLength="15"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="240dp"
+        android:layout_marginRight="66dp"
+        
+         />
+
+      <Button
+          android:id="@+id/button11"
+          android:layout_width="175dp"
+          android:layout_height="30dp"
+          
+          android:layout_alignParentBottom="true"
+          android:layout_alignRight="@+id/author_password"
+          android:layout_marginBottom="87dp"
+          android:layout_marginRight="0dp"
+          android:textSize="15px"
+          android:text="login"
+           />
+
+      <Button
+          android:id="@+id/button12"
+          android:layout_width="175dp"
+          android:layout_height="30dp"
+          
+          android:layout_alignRight="@+id/button11"
+          android:layout_alignTop="@+id/button11"
+          android:layout_marginRight="0dp"
+          android:layout_marginTop="28dp"
+          android:textSize="15px"
+          android:text="New Signin" />
+
+</RelativeLayout>

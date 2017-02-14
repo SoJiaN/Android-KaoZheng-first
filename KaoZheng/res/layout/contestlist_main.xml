@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/car_lists_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f2f6f8" >
+
+        <!-- 结果列表 -->
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+        </ListView>
+        <!-- 选择字母的提示 -->
+
+        <TextView
+            android:id="@+id/tv_show"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_launcher"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="51sp"
+            android:visibility="gone" />
+
+        <!-- 边框字母索引框 -->
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="20dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:background="#00000000"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+        </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/nodata_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:gravity="center_horizontal"
+        android:text="联系人加载中..." />
+
+</LinearLayout>
